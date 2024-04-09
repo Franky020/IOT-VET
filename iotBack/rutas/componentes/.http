@@ -1,0 +1,68 @@
+POST http://localhost:3000/api/componentes/nuevoComponente HTTP/1.1
+Content-Type: application/json
+
+{
+    "componente_id":"led_1",
+    "descripcion":"Led",
+    "ubicacion":"El Led esta en el segundo esp32",
+    "activo":true,
+    "tipo":"Varios",
+    "valor":"HIGH",
+    "medicion": "Sin registro"
+
+}
+
+###
+
+GET http://localhost:3000/api/componentes/temperatura HTTP/1.1
+Content-Type: application/json
+
+###
+
+PUT http://localhost:3000/api/componentes/dht11 HTTP/1.1
+Content-Type: application/json
+
+{
+    "componente_id": "dht11",
+    "descripcion": "HIGH",
+    "ubicacion": "Esta en el pin 14, en el esp32 esclavo",
+    "activo": true,
+    "tipo": "Sensor",
+    "valor": "22.5",
+    "medicion": "Sin registro"
+}
+
+###
+PUT http://localhost:3000/api/componentes/dht11 HTTP/1.1
+Content-Type: application/json
+
+{
+    "componente_id": "dht11",
+    "descripcion": "Sensor de temperatura",
+    "ubicacion": "Esta en el pin 14, en el esp32 esclavo",
+    "activo": true,
+    "tipo": "Sensor",
+    "valor": "25.5",
+    "medicion": "Sin registro"
+}
+###
+DELETE http://localhost:3000/api/componentes/DTH11 HTTP/1.1
+Content-Type: application/json
+
+### 
+PATCH  http://localhost:3000/api/componentes/apagarAlimentador/dht11 HTTP/1.1
+Content-Type: application/json
+
+###
+
+PATCH  http://localhost:3000/api/componentes/encenderAlimentador/dht11 HTTP/1.1
+Content-Type: application/json
+
+### 
+PATCH  http://localhost:3000/api/componentes/apaAlimentador/dht11 HTTP/1.1
+Content-Type: application/json
+
+###
+
+PATCH  http://localhost:3000/api/componentes/enAlimentador/dht11 HTTP/1.1
+Content-Type: application/json
